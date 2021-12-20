@@ -1,4 +1,4 @@
-## kolo-objectstore-dep
+## byzer-objectstore-dep
 
 ### build shade jar
 
