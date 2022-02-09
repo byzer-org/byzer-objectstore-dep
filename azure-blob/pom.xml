@@ -94,6 +94,15 @@
                                     <shadedPattern>shadeio.com.fasterxml.jackson.core</shadedPattern>
                                 </relocation>
                                 <relocation>
+                                    <pattern>com.google.guava</pattern>
+                                    <shadedPattern>shadeio.azure.com.google.guava</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.apache.commons</pattern>
+                                    <shadedPattern>shadeio.azure.org.apache.commons</shadedPattern>
+                                </relocation>
+
+                                <relocation>
                                     <pattern>com.fasterxml.jackson.databind</pattern>
                                     <shadedPattern>shadeio.com.fasterxml.jackson.databind</shadedPattern>
                                 </relocation>
