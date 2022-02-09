@@ -97,6 +97,10 @@
                                     <pattern>com.fasterxml.jackson.databind</pattern>
                                     <shadedPattern>shadeio.com.fasterxml.jackson.databind</shadedPattern>
                                 </relocation>
+                                <relocation>
+                                    <pattern>commons-lang</pattern>
+                                    <shadedPattern>shadeio.azure.commons-lang</shadedPattern>
+                                </relocation>
                                 <!--                                <relocation>-->
                                 <!--                                    <pattern>org.apache.httpcomponents</pattern>-->
                                 <!--                                    <shadedPattern>shadeio.httpcomponents</shadedPattern>-->
