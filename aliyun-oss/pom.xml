@@ -23,14 +23,9 @@
 
             <dependencies>
                 <dependency>
-                    <groupId>com.aliyun.oss</groupId>
-                    <artifactId>aliyun-sdk-oss</artifactId>
-                    <version>3.13.2</version>
-                </dependency>
-                <dependency>
                     <groupId>org.apache.hadoop</groupId>
                     <artifactId>hadoop-aliyun</artifactId>
-                    <version>3.3.1</version>
+                    <version>3.2.0</version>
                 </dependency>
             </dependencies>
         </profile>
@@ -68,18 +63,14 @@
                                     <pattern>com.google.guava</pattern>
                                     <shadedPattern>shadeio.oss.com.google.guava</shadedPattern>
                                 </relocation>
-                                <relocation>
-                                    <pattern>org.apache.commons</pattern>
-                                    <shadedPattern>shadeio.oss.org.apache.commons</shadedPattern>
-                                </relocation>
+<!--                                <relocation>-->
+<!--                                    <pattern>org.apache.commons</pattern>-->
+<!--                                    <shadedPattern>shadeio.oss.org.apache.commons</shadedPattern>-->
+<!--                                </relocation>-->
 
                                 <relocation>
                                     <pattern>com.fasterxml.jackson.databind</pattern>
                                     <shadedPattern>shadeio.oss.com.fasterxml.jackson.databind</shadedPattern>
-                                </relocation>
-                                <relocation>
-                                    <pattern>commons-lang</pattern>
-                                    <shadedPattern>shadeio.oss.commons-lang</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>org.apache.httpcomponents</pattern>
