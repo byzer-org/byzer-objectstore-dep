@@ -11,6 +11,7 @@
     <modules>
         <module>azure-blob</module>
         <module>aws-s3</module>
+        <module>aliyun-oss</module>
     </modules>
     
     

@@ -17,3 +17,10 @@ mvn package -pl aws-s3 -Pshade -Phadoop-2.7
 # hadoop-3.2 compatible
 mvn package -pl aws-s3 -Pshade -Phadoop-3.2 
 ```
+
+### build aliyun-oss shade jar
+
+```shell
+# hadoop-3.2 compatible
+mvn package -pl aws-s3 -Pshade -Phadoop-3.2
+```
