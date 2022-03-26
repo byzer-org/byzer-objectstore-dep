@@ -63,10 +63,6 @@
                                     <pattern>com.google.guava</pattern>
                                     <shadedPattern>shadeio.oss.com.google.guava</shadedPattern>
                                 </relocation>
-<!--                                <relocation>-->
-<!--                                    <pattern>org.apache.commons</pattern>-->
-<!--                                    <shadedPattern>shadeio.oss.org.apache.commons</shadedPattern>-->
-<!--                                </relocation>-->
 
                                 <relocation>
                                     <pattern>com.fasterxml.jackson.databind</pattern>
