@@ -22,5 +22,5 @@ mvn package -pl aws-s3 -Pshade -Phadoop-3.2
 
 ```shell
 # hadoop-3.2 compatible
-mvn package -pl aws-s3 -Pshade -Phadoop-3.2
+mvn package -pl aliyun-oss -Pshade -Phadoop-3.2
 ```
