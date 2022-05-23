@@ -9,7 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>aws-s3_${hadoop.version}</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
 
+    <properties>
+        <hadoop.version>3.3.1</hadoop.version>
+    </properties>
     <profiles>
         <profile>
             <id>hadoop-2.7</id>
@@ -73,20 +77,17 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-            <properties>
-                <hadoop.version>3.2</hadoop.version>
-            </properties>
 
             <dependencies>
                 <dependency>
-                    <groupId>software.amazon.awssdk</groupId>
-                    <artifactId>aws-sdk-java</artifactId>
-                    <version>2.17.155</version>
+                    <groupId>org.apache.hadoop</groupId>
+                    <artifactId>hadoop-aws</artifactId>
+                    <version>3.3.1</version>
                 </dependency>
                 <dependency>
                     <groupId>org.apache.hadoop</groupId>
-                    <artifactId>hadoop-aws</artifactId>
-                    <version>3.2.0</version>
+                    <artifactId>hadoop-common</artifactId>
+                    <version>3.3.1</version>
                 </dependency>
             </dependencies>
         </profile>
@@ -119,6 +120,10 @@
                                 <relocation>
                                     <pattern>com.fasterxml.jackson.databind</pattern>
                                     <shadedPattern>shadeio.s3.com.fasterxml.jackson.databind</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>com.thoughtworks.paranamer</pattern>
+                                    <shadedPattern>shadeio.s3.com.thoughtworks.paranamer</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>
