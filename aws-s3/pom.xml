@@ -91,6 +91,25 @@
                 </dependency>
             </dependencies>
         </profile>
+        <profile>
+            <id>with-glue</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+
+            <dependencies>
+                <dependency>
+                    <groupId>org.apache.hadoop</groupId>
+                    <artifactId>hadoop-aws</artifactId>
+                    <version>3.3.1-glue</version>
+                </dependency>
+                <dependency>
+                    <groupId>org.apache.hadoop</groupId>
+                    <artifactId>hadoop-common</artifactId>
+                    <version>3.3.1</version>
+                </dependency>
+            </dependencies>
+        </profile>
 
         <profile>
             <id>shade</id>
