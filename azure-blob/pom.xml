@@ -8,8 +8,12 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <properties>
+        <hadoop.version>3.2</hadoop.version>
+    </properties>
 
     <artifactId>azure-blob_${hadoop.version}</artifactId>
+
     <profiles>
         <profile>
             <id>hadoop-2.7</id>
