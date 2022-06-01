@@ -93,6 +93,9 @@
         </profile>
         <profile>
             <id>with-glue</id>
+            <properties>
+                <hadoop.version>3.3.1-glue</hadoop.version>
+            </properties>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
