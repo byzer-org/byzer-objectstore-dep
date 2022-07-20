@@ -24,3 +24,8 @@ mvn package -pl aws-s3 -Pshade -Phadoop-3.2
 # hadoop-3.2 compatible
 mvn package -pl aliyun-oss -Pshade -Phadoop-3.2
 ```
+
+### Build hadoop common & hadoop-aws fat jar
+```shell
+mvn package -pl hadoop-common-aws -Pshade
+```
