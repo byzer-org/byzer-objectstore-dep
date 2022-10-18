@@ -1,3 +1,4 @@
+## This repo is no longer maintained, please visit https://github.com/byzer-org/byzer-extension 
 ## byzer-objectstore-dep
 
 ### build azure-blob shade jar
